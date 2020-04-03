@@ -9,7 +9,7 @@ Wanted: {
     	"FooBar": "3.1"
 	}
 , Got: {"Foo":"1","Bar":"2","FooBar":3.1}
---- FAIL: TestWinNotifyJsonToProtobuf (0.00s)
+--- FAIL: TestJsonToProtobuf (0.00s)
     jsonToProto_test.go:14: %!s(bool=false) != %!s(bool=true)
 FAIL
 exit status 1
