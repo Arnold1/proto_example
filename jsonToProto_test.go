@@ -32,7 +32,7 @@ func areEqualJSON(s1, s2 string) (bool, error) {
 	return reflect.DeepEqual(o1, o2), nil
 }
 
-func TestWinNotifyJsonToProtobuf(t *testing.T) {
+func TestJsonToProtobuf(t *testing.T) {
 
 	jsonDataIn := []byte(`{
 		"Foo": "1",
