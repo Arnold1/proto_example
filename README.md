@@ -3,11 +3,6 @@
 Error:
 ```
 $ go test
-jsonDataIn: {
-		"Foo": "1",
-    	"Bar": 2,
-    	"FooBar": "3.1"
-	}
 Wanted: {
 		"Foo": "1",
     	"Bar": 2,
