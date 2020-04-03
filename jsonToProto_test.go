@@ -39,6 +39,11 @@ func TestJsonToProtobuf(t *testing.T) {
     	"Bar": 2,
     	"FooBar": 3.1
 	}`)
+	expectedJsonDataOut := []byte(`{
+		"Foo": "1",
+    	"Bar": "2",
+    	"FooBar": 3.1
+	}`)
 
 	out, err := JsonToProto(bytes.NewReader(jsonDataIn))
 	assertEqual(t, err, nil)
@@ -53,7 +58,7 @@ func TestJsonToProtobuf(t *testing.T) {
 	jsonDataOut, err := ProtoToJSON(reqOut)
 	assertEqual(t, err, nil)
 
-	res, err := areEqualJSON(string(jsonDataIn), string(jsonDataOut))
+	res, err := areEqualJSON(string(expectedJsonDataOut), string(jsonDataOut))
 	if res != true {
 		fmt.Printf("Wanted: %s\n, Got: %s\n", string(jsonDataIn), string(jsonDataOut))
 	}
