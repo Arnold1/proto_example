@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package message;
+
+option go_package = "messagepb";
+
+message Message {
+    required string Foo = 1;
+    required int64 Bar = 2;
+    required double FooBar = 3;
+}
