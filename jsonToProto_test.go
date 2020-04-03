@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	proto "github.com/Arnold1/proto_example/proto"
 	"reflect"
 	"testing"
-	proto "github.com/Arnold1/proto_example/proto"
 )
 
 func assertEqual(t *testing.T, a interface{}, b interface{}) {
