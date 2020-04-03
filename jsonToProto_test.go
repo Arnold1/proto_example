@@ -39,7 +39,6 @@ func TestJsonToProtobuf(t *testing.T) {
     	"Bar": 2,
     	"FooBar": 3.1
 	}`)
-	fmt.Println("jsonDataIn:", string(jsonDataIn))
 
 	out, err := JsonToProto(bytes.NewReader(jsonDataIn))
 	assertEqual(t, err, nil)
